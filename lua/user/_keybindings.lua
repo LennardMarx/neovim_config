@@ -5,5 +5,11 @@ vim.api.nvim_set_keymap("n", "<Tab>", ":bnext<CR>", { noremap = true })
 -- q to enter visual block mode as <c-v> is used by windows (?)
 vim.api.nvim_set_keymap("n", "q", "<c-v>", { noremap = true })
 
--- always wrap text
--- vim.wo.wrap = false
+-- ':set wrap' for specific filetypes
+local enable_wrap_filetypes = { "tex", "markdown", "text", "mail" }
+
+for _, filetype in ipairs(enable_wrap_filetypes) do
+  vim.api.nvim_exec([[
+    autocmd FileType ]] .. filetype .. [[ setlocal wrap
+  ]], false)
+end

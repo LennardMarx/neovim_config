@@ -1,5 +1,5 @@
 Slightly altered Astro Vim (https://github.com/AstroNvim/AstroNvim)
-- added files marked with _file.lua
+- added files marked with '_file.lua'
 
 For LaTeX support:
 1. install Perl (https://strawberryperl.com/)
