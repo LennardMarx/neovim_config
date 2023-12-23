@@ -28,10 +28,12 @@ require("astronvim.utils").conditional_func(astronvim.user_opts("polish", nil, f
 
 require 'nvim-treesitter.install'.compilers = { "clang" }
 
-
 require "plugins.configs._gruvbox_config"
 require "user._keybindings"
 require "user._vim-plug"
+
+
+
 -- local function write_server_name()
 --   local nvim_server_file = vim.fn.has('win32') == 1 and vim.fn.expand('$TEMP') or '/tmp'
 --   nvim_server_file = nvim_server_file .. '/vimtexserver.txt'

@@ -9,7 +9,8 @@ vim.cmd "syntax enable"
 -- vim.g.vimtex_view_method = "mupdf" -- Built-in viewer method
 
 -- using SumatraPDF
-vim.g.vimtex_view_general_viewer = "C:/Users/lmarx/AppData/Local/SumatraPDF/SumatraPDF.exe"
+-- vim.g.vimtex_view_general_viewer = "C:/Users/lmarx/AppData/Local/SumatraPDF/SumatraPDF.exe"
+vim.g.vimtex_view_general_viewer = ""
 vim.g.vimtex_view_general_options = "-reuse-instance -forward-search @tex @line @pdf"
 
 -- trying to use mupdf (not working)
